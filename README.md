@@ -39,18 +39,18 @@ Once a repo with Dockerfile is cloned/pulled, run `docker build` to build a dock
    - `rm`: remove one or more images<br> 
    - more commands can be found at the [official website](https://docs.docker.com/engine/reference/commandline/image/)
 
-## **docker build**
+## **docker build** - Build an image from Dockerfile
     
     docker build [OPTIONS] PATH | URL | -
 
-	The point of `docker build` is to build an image from a Dockerfile.
-	The path should specify where the Dockerfile is
+
+> The path should specify where the Dockerfile is
 > E.g. if "Dockerfile" is in current directory, you would enter `docker build .` to build current Dockerfile
 
 
-## **docker run**
+## **docker run** - Run a command in a new container
 
-    docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
+    docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
 1. **Running docker image using CPU**
 

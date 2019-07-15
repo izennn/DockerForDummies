@@ -2,7 +2,7 @@
 
 A quick getting-started guide to incorporating docker, the **Dayta AI** way
 
-### **Before getting started: For the ML team**, all that is really needed to know is that a program with a dockerfile can be ran on any host OS with docker installed.
+### **For the ML team**, all you really need to know is that a program with a dockerfile can be ran on any host OS, given that Docker is installed on the host machine.
 
 Once the program is pulled, run `docker build` to build a docker container, then `docker run` to deploy the newly made app onto docker engine
 
@@ -13,7 +13,7 @@ Once the program is pulled, run `docker build` to build a docker container, then
 **You will *not* need to use `docker compose`, as it will be handled by Kubernetes.** 
 `docker compose` is a tool for *defining and running multi-container Docker applications.* You set up the configuration for your application's services in the docker-compose yaml file.
 
-## **The Basics**
+## **Some Basics**
 1. List existing docker containers<br>
     `docker ps [OPTIONS]`<br>
 

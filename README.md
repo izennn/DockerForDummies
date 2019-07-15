@@ -6,6 +6,8 @@ A quick getting-started guide to incorporating docker, the **Dayta AI** way
 
 Once a repo with Dockerfile is cloned/pulled, run `docker build` to build a docker container, then `docker run` to deploy the newly made app onto docker engine
 
+We designed this "boiler template" so that you can pull this repository, run `docker-compose up`, open `localhost:8888`, and work in the container's Jupyter Notebook
+
 #### Quick note on `run` vs `compose`
 
 `docker run` *runs processes in isolated containers.* When `docker run` is executed, it is *isolated* in the sense that it has its own file system, its own networking, and its own isolated process tree separate from the host. More defailed description of `docker run` can be found below

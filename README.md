@@ -4,7 +4,7 @@ A quick getting-started guide to incorporating docker, the **Dayta AI** way
 
 ### **For the ML team**, all you really need to know is:
 
-We designed this "boiler template" so that you can pull this repository, run `docker-compose up`, open `localhost:8888`, and work in the container's Jupyter Notebook
+We designed this "boiler template" so that you can pull this repository, edit the Dockerfile, run `docker-compose up`, open `localhost:8888`, and work in the container's Jupyter Notebook
 
 #### Quick note on `run` vs `compose`
 

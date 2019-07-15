@@ -4,8 +4,6 @@ A quick getting-started guide to incorporating docker, the **Dayta AI** way
 
 ### **For the ML team**, all you really need to know is:
 
-Once a repo with Dockerfile is cloned/pulled, run `docker build` to build a docker container, then `docker run` to deploy the newly made app onto docker engine
-
 We designed this "boiler template" so that you can pull this repository, run `docker-compose up`, open `localhost:8888`, and work in the container's Jupyter Notebook
 
 #### Quick note on `run` vs `compose`

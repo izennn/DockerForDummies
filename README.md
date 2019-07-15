@@ -77,7 +77,7 @@ Once you've built the Dockerfile, run `docker image ls` to see the new image in 
    - `field3`: (optional) comma-separated list of options, such as `ro`, `cached`<br>
 
     ***NOTE: On OSX, you need to use the full absolute path for the host container***<br>
-    > E.g. "/Users/name/Desktop/sites/src:target" instead of the relative path "src:target" instead of the relative path src/<br>
+    > E.g. `/Users/name/Desktop/sites/src:target`, instead of the relative path `src:target`<br>
 
     Detailed documentation can be found [here](https://docs.docker.com/engine/reference/run/)
 

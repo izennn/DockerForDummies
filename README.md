@@ -35,7 +35,7 @@ Once the program is pulled, run `docker build` to build a docker container, then
 
     COMMANDS: 
    - `ls`: list images<br>
-   - `build`: build container from dockerfile<br> 
+   - `build`: build image from dockerfile<br> 
    - `rm`: remove one or more images<br> 
    - more commands can be found at the [official website](https://docs.docker.com/engine/reference/commandline/image/)
 

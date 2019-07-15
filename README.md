@@ -14,15 +14,16 @@ Once a repo with Dockerfile is cloned/pulled, run `docker build` to build a dock
 `docker compose` is a tool for *defining and running multi-container Docker applications.* You set up the configuration for your application's services in the docker-compose yaml file.
 
 ## **Some Basics**
-1. List existing docker containers<br>
-    `docker ps [OPTIONS]`<br>
+1. `docker ps [OPTIONS]`<br>
+    List existing docker containers<br>
 
     OPTIONS:
     - `-all, -a`: show all containers (default only shows running containers)<br>
     - `-f or --filer [key=value]`: filter output by keys `id`, `name`, `label`, etc.
 
-2. Manage docker containers<br>
-    `docker container [COMMAND]`<br>
+
+2. `docker container [COMMAND]`<br>
+    Manage docker containers<br>
 
     COMMANDS: 
     - `ls`: list containers<br>
@@ -30,8 +31,8 @@ Once a repo with Dockerfile is cloned/pulled, run `docker build` to build a dock
     - `port`: list port mappings or specific mapping for the container<br>
     - more commands can be found at the [official website](https://docs.docker.com/engine/reference/commandline/container/)
 
-3. Manage docker images<br>
-    `docker image [COMMAND]`<br>
+3. `docker image [COMMAND]`<br>
+    Manage docker images<br>
 
     COMMANDS: 
    - `ls`: list images<br>
@@ -44,8 +45,9 @@ Once a repo with Dockerfile is cloned/pulled, run `docker build` to build a dock
     docker build [OPTIONS] PATH | URL | -
 
 
-> The path should specify where the Dockerfile is
-> E.g. if "Dockerfile" is in current directory, you would enter `docker build .` to build current Dockerfile
+PATH should specify where the Dockerfile can be found<br>
+    E.g. if "Dockerfile" is in current directory, you would enter `docker build` to build current Dockerfile<br><br>
+Once you've built the Dockerfile, run `docker image ls` to see the new image in the image list
 
 
 ## **docker run** - Run a command in a new container

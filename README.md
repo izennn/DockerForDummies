@@ -43,6 +43,10 @@ Once a repo with Dockerfile is cloned/pulled, run `docker build` to build a dock
     
     docker build [OPTIONS] PATH | URL | -
 
+	The point of `docker build` is to build an image from a Dockerfile.
+	The path should specify where the Dockerfile is
+> E.g. if "Dockerfile" is in current directory, you would enter `docker build .` to build current Dockerfile
+
 
 ## **docker run**
 

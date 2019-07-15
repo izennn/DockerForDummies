@@ -1,0 +1,19 @@
+# 1/6
+FROM ubuntu:18.04 
+
+# 2/6 Install sudo
+RUN apt-get install sudo
+
+# 3/6 add user and switch user (user: docker , pw: docker)
+RUN useradd -m docker && \
+    echo "docker:docker" | chpasswd && \
+    adduser docker sudo
+
+# 4/6 change USER
+USER docker
+
+# 5/6 set the working directory of new bash
+WORKDIR /this_is_the_WORKDIR_i_made_in_dockerfile
+
+# 6/6 expose the port 1111
+EXPOSE 1111

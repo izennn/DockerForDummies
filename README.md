@@ -13,7 +13,12 @@ We designed this "boiler template" so that you can pull this repository, edit th
 **You will *not* need to concern yourself with `docker compose`, as it will be handled by Kubernetes.** 
 `docker compose` is a tool for *defining and running multi-container Docker applications.* You set up the configuration for your application's services in the docker-compose yaml file.
 
-## **Some Basics**
+# Table of contents
+1. [Some Basics](#basics)
+2. [docker build](#build)
+3. [docker run](#run)
+
+## **Some Basics**<a name="basics"></a>
 1. `docker ps [OPTIONS]`<br>
     List existing docker containers<br>
 
@@ -40,7 +45,7 @@ We designed this "boiler template" so that you can pull this repository, edit th
    - `rm`: remove one or more images<br> 
    - more commands can be found at the [official website](https://docs.docker.com/engine/reference/commandline/image/)
 
-## **docker build** - Build an image from Dockerfile
+## **docker build** - Build an image from Dockerfile<a name="build"></a>
     
     docker build [OPTIONS] PATH | URL | -
 
@@ -50,7 +55,7 @@ PATH should specify where the Dockerfile can be found<br>
 Once you've built the Dockerfile, run `docker image ls` to see the new image in the image list
 
 
-## **docker run** - Run a command in a new container
+## **docker run** - Run a command in a new container<a name="run"></a>
 
     docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 

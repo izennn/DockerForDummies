@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  #Name of service (can be anything but will be used as dns in docker compose)
+  development:
+    #Location of your dockerfile for the service
+    build: .
+    #!IMPORTANT! Mount your dev volume here so you have code changes on your local = code change in container
+    volumes: 
+      - ./Workspace:/home/Workspace
+    # Map port inside docker container to your host machine's port
+    ports:
+      - 8888:8888
+    # Run forest, run!
+    command: jupyter notebook
